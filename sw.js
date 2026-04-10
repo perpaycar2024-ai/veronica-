@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tareas-v4';
+const CACHE_NAME = 'tareas-v5';
 const ASSETS = ['./index.html', './manifest.json'];
 
 self.addEventListener('install', e => {
