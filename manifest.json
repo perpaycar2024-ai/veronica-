@@ -2,7 +2,7 @@
   "name": "Mis Tareas",
   "short_name": "Tareas",
   "description": "Gestión de tareas con carpetas personalizables",
-  "start_url": "./tareas.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f1b2d",
   "theme_color": "#4a9eff",
