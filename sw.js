@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tareas-v1';
+const CACHE_NAME = 'tareas-v2';
 const ASSETS = [
   './index.html',
   './manifest.json'
@@ -31,7 +31,7 @@ self.addEventListener('fetch', e => {
         const clone = response.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
         return response;
-      }).catch(() => caches.match('./tareas.html'));
+      }).catch(() => caches.match('./index.html'));
     })
   );
 });
