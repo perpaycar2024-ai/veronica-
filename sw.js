@@ -26,7 +26,7 @@ self.addEventListener('fetch', e => {
         const clone = response.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
         return response;
-      }).catch(() => caches.match('./tareas.html'));
+      }).catch(() => caches.match('./index.html'));
     })
   );
 });
@@ -37,9 +37,9 @@ self.addEventListener('notificationclick', e => {
   e.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clientList => {
       for (const client of clientList) {
-        if (client.url.includes('tareas.html') && 'focus' in client) return client.focus();
+        if (client.url.includes('index.html') && 'focus' in client) return client.focus();
       }
-      if (clients.openWindow) return clients.openWindow('./tareas.html');
+      if (clients.openWindow) return clients.openWindow('./index.html');
     })
   );
 });
