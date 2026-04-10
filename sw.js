@@ -1,5 +1,5 @@
-const CACHE_NAME = 'tareas-v3';
-const ASSETS = ['./tareas.html', './manifest.json'];
+const CACHE_NAME = 'tareas-v4';
+const ASSETS = ['./index.html', './manifest.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(
