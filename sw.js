@@ -1,6 +1,6 @@
 const CACHE_NAME = 'tareas-v1';
 const ASSETS = [
-  './tareas.html',
+  './index.html',
   './manifest.json'
 ];
 
